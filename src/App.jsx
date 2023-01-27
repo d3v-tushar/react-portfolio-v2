@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import MySkills from "./components/MySkills";
+import MyProjects from "./components/MyProjects";
 //import Bot from "./components/Bot";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Hero />
       <About />
       <Skills />
+      <MyProjects/>
       <Hireme />
       <Project />
       <Contact />
