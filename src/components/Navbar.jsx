@@ -18,14 +18,14 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`fixed w-full left-0 top-0 z-[999] ${
+      className={`fixed w-full left-0 top-0 z-[999] mb-5 ${
         sticky ? "bg-white/60  text-gray-900" : "text-white"
       }`}
     >
       <div className="flex items-center justify-between">
         <div className="mx-7">
-          <h4 className="text-4xl uppercase font-bold">
-            A<span className="text-cyan-600">le</span>x
+          <h4 className="text-2xl lg:text-4xl uppercase font-bold ">
+            Mohsin<span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text"> Ahmed</span>
           </h4>
         </div>
         <div

@@ -1,26 +1,78 @@
 import React from "react";
 
 const Skills = () => {
+  // const skills = [
+  //   {
+  //     logo: "logo-html5",
+  //     level: "HTML5",
+  //     count: 86,
+  //   },
+  //   {
+  //     logo: "logo-css3",
+  //     level: "CSS3",
+  //     count: 90,
+  //   },
+  //   {
+  //     logo: "logo-nodejs",
+  //     level: "NODE JS",
+  //     count: 40,
+  //   },
+  //   {
+  //     logo: "logo-react",
+  //     level: "REACT JS",
+  //     count: 80,
+  //   },
+  // ];
+
   const skills = [
     {
-      logo: "logo-html5",
-      level: "Advance",
-      count: 86,
+      title: "HTML",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     },
     {
-      logo: "logo-css3",
-      level: "Expect",
-      count: 90,
+      title: "CSS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     },
     {
-      logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
+      title: "Javascript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
     {
-      logo: "logo-react",
-      level: "Intermediate",
-      count: 80,
+      title: "Sass",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+    },
+    {
+      title: "TailwindCSS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    },
+    {
+      title: "React",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    {
+      title: "NextJS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
+      style: { filter: "invert(1)" },
+    },
+    {
+      title: "Typescript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    },
+    {
+      title: "NodeJS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      title: "Git",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    },
+    {
+      title: "Firebase",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+    },
+    {
+      title: "Figma",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
     },
   ];
   return (
@@ -30,7 +82,7 @@ const Skills = () => {
           My <span className="text-cyan-600">Skills</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
-        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
+        {/* <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
           {skills?.map((skill, i) => (
             <div
               key={i}
@@ -49,6 +101,24 @@ const Skills = () => {
               <p className="text-xl mt-3">{skill.level}</p>
             </div>
           ))}
+        </div> */}
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-3 lg:grid-cols-4 gap-y-6 w-full my-8">
+        {skills.map((item, index) => {
+          return (
+            <div
+              title={item.title}
+              key={index}
+              className="w-10 mx-auto flex items-center flex-col justify-center"
+            >
+              <img src={item.icon} style={item.style} />
+              <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
+                {item.title}
+              </p>
+            </div>
+          );
+        })}
+      </div>
         </div>
       </div>
     </section>
