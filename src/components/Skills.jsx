@@ -1,4 +1,6 @@
 import React from "react";
+import Lottie from 'react-lottie';
+import animationData from './../../public/skill.json';
 
 const Skills = () => {
   // const skills = [
@@ -23,6 +25,14 @@ const Skills = () => {
   //     count: 80,
   //   },
   // ];
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
 
   const skills = [
     {
@@ -103,6 +113,11 @@ const Skills = () => {
           ))}
         </div> */}
         <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div>
+          <Lottie options={defaultOptions}
+              height={400}
+              width={400}/>
+          </div>
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-y-6 w-full my-8">
         {skills.map((item, index) => {
           return (
