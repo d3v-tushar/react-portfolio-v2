@@ -53,7 +53,7 @@ const Hero = () => {
             </span>
             <span className="text-4xl lg:text-7xl">Mohsin Ahmed</span>
           </h4>
-          <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-purple-500 to-yellow-500 text-2xl lg:text-4xl md:leading-normal lg:leading-10 mt-2 font-bold text-gray-600">
+          <h4 className="text-transparent bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl lg:text-4xl md:leading-normal lg:leading-10 mt-2 font-bold text-gray-600">
           <TypeAnimation
     // Same String at the start will only be typed once, initially
     sequence={[

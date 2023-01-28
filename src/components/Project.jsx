@@ -45,7 +45,7 @@ const Project = () => {
     },
   ];
   return (
-    <section id="projects" className="py-10 mt-10 text-white">
+    <section id="projects" className="py-10 mt-10 text-white mx-auto w-10/12">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
@@ -53,7 +53,7 @@ const Project = () => {
         <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
       </div>
       <br />
-      <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
+      {/* <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
         <div className="lg:w-2/3 w-full">
           <Swiper
             slidesPerview={1.2}
@@ -101,6 +101,68 @@ const Project = () => {
         <div className="lg:block hidden">
           <img src={project_person} alt="" />
         </div>
+      </div> */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-10">
+      {
+        projects.map((project, index) =>
+        <div
+      className="max-w-sm mx-auto flex flex-col projects-center md:projects-start md:justify-center"
+    >
+      <a
+        href="#"
+        target="_blank"
+        className={`w-full relative rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-pink will-change-projectCard`}
+      >
+        <img
+          className="w-full rounded-md"
+          src="https://braydentw.io/static/projects/bitcointemp.png"
+        />
+      </a>
+      <div className="w-full mt-5">
+        <div className="flex projects-center justify-between">
+          <a href="#" target="_blank">
+            <h3 className="text-lg font-bold">{project.name}</h3>
+          </a>
+          <div className="space-x-2 grid grid-cols-2">
+            { project  && (
+              <a href={project.link} target="_blank" rel="noreferrer">
+                <img
+                  src="https://braydentw.io/_next/image?url=%2Fstatic%2Ficons%2Fexternal-link.svg&w=16&q=75"
+                  width={16}
+                  height={16}
+                  alt="Link Icon"
+                />
+              </a>
+            )}
+            {project && (
+              <a href="#" target="_blank" rel="noreferrer">
+                <img
+                  src="https://braydentw.io/_next/image?url=%2Fstatic%2Ficons%2Fgithub.svg&w=16&q=75"
+                  width={16}
+                  height={16}
+                  alt="Github Icon"
+                />
+              </a>
+            )}
+          </div>
+        </div>
+        <p className="text-fun-gray text-left text-sm">A fun way to check the price of bitcoin! Cloudy days, sunny days, and Bitcoin Storms!</p>
+        {/* <ul className="flex flex-wrap items-center mt-2 -ml-2 list-none">
+          {project.tags.map((tag, index) => {
+            return (
+              <li key={tag}>
+                <Link href={`/projects/tag/${kebabCase(tag)}`}>
+                  <div className="m-1 rounded-lg text-sm bg-fun-pink-dark py-1 px-2 cursor-pointer hover:opacity-75">
+                    {tag}
+                  </div>
+                </Link>
+              </li>
+            );
+          })}
+        </ul> */}
+      </div>
+    </div>
+    )}
       </div>
     </section>
   );
