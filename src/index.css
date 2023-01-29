@@ -10,6 +10,8 @@ html {
 }
 body {
   @apply box-border bg-gray-900 text-gray-100;
+  /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
 .btn-primary {
   @apply bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;

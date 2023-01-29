@@ -86,7 +86,7 @@ const Skills = () => {
     },
   ];
   return (
-    <section id="skills" className="py-10 bg-gray-800 relative">
+    <section id="skills" className="py-10 relative w-11/12">
       <div className="mt-8 text-gray-100 text-center">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
@@ -126,7 +126,7 @@ const Skills = () => {
               key={index}
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
-              <img src={item.icon} style={item.style} />
+              <img src={item.icon} className="hover:scale-125 duration-500 ease-in-out" style={item.style} />
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}
               </p>

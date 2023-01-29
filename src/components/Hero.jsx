@@ -47,7 +47,7 @@ const Hero = () => {
         <div className="grid items-center">
           <div className="md:text-left w-full">
           <h4 className="text-xl md:leading-normal leading-10 text-white font-bold">
-            <span className="text-cyan-600 lg:text-4xl text-3xl">
+            <span className="text-gray-900 lg:text-4xl text-3xl">
               Hi, <span className="text-white">I'm</span>
               <br />
             </span>

@@ -145,7 +145,13 @@ const MyProjects = () => {
     //     </div>
     //   </div>
     // </div>
-    <></>
+    <>
+    <div>
+      <div>
+        <img className='animate-spin' src="../assets/images/hero.png" alt="" />
+      </div>
+    </div>
+    </>
     )
 };
 
