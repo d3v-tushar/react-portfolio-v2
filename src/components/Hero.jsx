@@ -71,12 +71,12 @@ const Hero = () => {
   />
           </h4>
           
-          <button type="button" class="px-8 py-3 rounded-xl font-bold mt-4 text-lg bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500 hover:text-gray-900">Resume</button>
+          <button type="button" className="hover:scale-125 duration-500 ease-in-out px-6 py-3 rounded-xl font-bold mt-4 text-lg bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500 hover:text-gray-900">Resume</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((icon) => (
               <div
                 key={icon}
-                className="text-gray-600 hover:text-white cursor-pointer "
+                className="text-gray-300 hover:text-white cursor-pointer "
               >
                 <ion-icon name={icon}></ion-icon>
               </div>

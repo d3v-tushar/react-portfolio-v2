@@ -1,6 +1,19 @@
 import React from "react";
 import Lottie from 'react-lottie';
 import animationData from './../../public/skill.json';
+import html from '../assets/tech/html.png';
+import css from '../assets/tech/css.png';
+import javascript from '../assets/tech/javascript.png';
+import tailwind from '../assets/tech/tailwind.png';
+import bootstrap from '../assets/tech/bootstrap.png';
+import react from '../assets/tech/react.png';
+import redux from '../assets/tech/redux.png';
+import mongo from '../assets/tech/mongo.png';
+import express from '../assets/tech/express.png';
+import node from '../assets/tech/node.png';
+import typescript from '../assets/tech/typescript.png';
+import git from '../assets/tech/git.png';
+import firebase from '../assets/tech/firebase.png'
 
 const Skills = () => {
   // const skills = [
@@ -48,8 +61,8 @@ const Skills = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
     {
-      title: "Sass",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+      title: "ExpressJS",
+      icon: express,
     },
     {
       title: "TailwindCSS",
@@ -58,11 +71,12 @@ const Skills = () => {
     {
       title: "React",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      style: "animate-spin"
     },
     {
-      title: "NextJS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
-      style: { filter: "invert(1)" },
+      title: "Redux",
+      icon: redux,
+      style: "animate-spin",
     },
     {
       title: "Typescript",
@@ -81,10 +95,67 @@ const Skills = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
     },
     {
-      title: "Figma",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      title: "MongoDB",
+      icon: mongo,
     },
   ];
+
+  // const skills = [
+  //   {
+  //     title: "HTML",
+  //     icon: html
+  //   },
+  //   {
+  //     title: "CSS",
+  //     icon: css
+  //   },
+  //   {
+  //     title: "Javascript",
+  //     icon: javascript,
+  //   },
+  //   {
+  //     title: "TailwindCSS",
+  //     icon: tailwind,
+  //   },
+  //   {
+  //     title: "React",
+  //     icon: react,
+  //     style: { filter: "animate-spin" },
+  //   },
+  //   {
+  //     title: "ReduxJS",
+  //     icon: redux,
+  //     style: { filter: "invert(1)" },
+  //   },
+  //   {
+  //     title: "Typescript",
+  //     icon: typescript,
+  //   },
+  //   {
+  //     title: "NodeJS",
+  //     icon: node,
+  //   },
+  //   {
+  //     title: "Git",
+  //     icon: git,
+  //   },
+  //   {
+  //     title: "ExpressJS",
+  //     icon: express
+  //   },
+  //   {
+  //     title: "Bootstrap",
+  //     icon: bootstrap
+  //   },
+  //   {
+  //     title: "MongoDB",
+  //     icon: mongo
+  //   },
+  //   {
+  //     title: "Firebase",
+  //     icon: firebase
+  //   },
+  // ];
   return (
     <section id="skills" className="py-10 relative w-11/12">
       <div className="mt-8 text-gray-100 text-center">
@@ -126,7 +197,7 @@ const Skills = () => {
               key={index}
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
-              <img src={item.icon} className="hover:scale-125 duration-500 ease-in-out" style={item.style} />
+              <img src={item.icon} className={`hover:scale-125 duration-500 ease-in-out ${item.title == "React" ? item.style : ""} ${item.title == "Redux" ? item.style : ""}`} />
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}
               </p>
