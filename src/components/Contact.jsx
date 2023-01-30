@@ -58,15 +58,15 @@ const Contact = () => {
     //   </div>
     // </section>
     <section class="">
-    <div class="container px-6 py-12 mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center">
-            <div class="">
+    <div class="container mx-auto">
+        <div class="lg:flex lg:items-center lg:-mx-6">
+            <div class="lg:w-1/2 lg:mx-6">
             <Lottie options={defaultOptions}
               height={400}
               width={400}/>
             </div>
 
-            <div class="mt-8 grid justify-center">
+            <div class="mt-8 lg:w-1/2 lg:mx-6 px-3 mb-4">
                 <div
                     class="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
                     <h1 class="text-lg font-medium text-gray-700">What do you want to ask</h1>

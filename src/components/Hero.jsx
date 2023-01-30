@@ -45,13 +45,13 @@ const Hero = () => {
     // </section>
     <section className="min-h-screen grid grid-cols-1 justify-items-center justify-center items-center lg:grid-cols-2 mt-12">
         <div className="grid items-center">
-          <div className="md:text-left w-full">
+          <div className="text-left md:text-left sm:text-center  w-full">
           <h4 className="text-xl md:leading-normal leading-10 text-white font-bold">
             <span className="text-gray-900 lg:text-4xl text-3xl">
               Hi, <span className="text-white">I'm</span>
               <br />
             </span>
-            <span className="text-4xl lg:text-7xl">Mohsin Ahmed</span>
+            <span className="text-5xl lg:text-7xl">Mohsin Ahmed</span>
           </h4>
           <h4 className="text-transparent bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl lg:text-4xl md:leading-normal lg:leading-10 mt-2 font-bold text-gray-600">
           <TypeAnimation
@@ -71,7 +71,7 @@ const Hero = () => {
   />
           </h4>
           
-          <button type="button" className="hover:scale-125 duration-500 ease-in-out px-6 py-3 rounded-xl font-bold mt-4 text-lg bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500 hover:text-gray-900">Resume</button>
+          <button type="button" className="hover:scale-125 duration-500 ease-in-out px-5 py-2 rounded-xl font-bold mt-4 text-lg bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500 hover:text-gray-900">Resume</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((icon) => (
               <div

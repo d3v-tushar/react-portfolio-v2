@@ -13,7 +13,7 @@ import MyProjects from "./components/MyProjects";
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="app overflow-hidden">
       <Navbar />
       {/* <Bot /> */}
       <Hero />
