@@ -47,13 +47,13 @@ const Hero = () => {
         <div className="grid items-center">
           <div className="text-left md:text-left sm:text-center  w-full">
           <h4 className="text-xl md:leading-normal leading-10 text-white font-bold">
-            <span className="text-gray-900 lg:text-4xl text-3xl">
+            <span className="text-cyan-600 lg:text-4xl text-3xl">
               Hi, <span className="text-white">I'm</span>
               <br />
             </span>
             <span className="text-5xl lg:text-7xl">Mohsin Ahmed</span>
           </h4>
-          <h4 className="text-transparent bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl lg:text-4xl md:leading-normal lg:leading-10 mt-2 font-bold text-gray-600">
+          <h4 className="text-transparent bg-gradient-to-r from-green-300 via-blue-300 to-purple-600 bg-clip-text text-2xl lg:text-4xl md:leading-normal lg:leading-10 mt-2 font-bold text-gray-700">
           <TypeAnimation
     // Same String at the start will only be typed once, initially
     sequence={[

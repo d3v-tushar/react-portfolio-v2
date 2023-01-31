@@ -1,18 +1,18 @@
 import React from "react";
 import Lottie from 'react-lottie';
 import animationData from './../../public/skill.json';
-import html from '../assets/tech/html.png';
-import css from '../assets/tech/css.png';
-import javascript from '../assets/tech/javascript.png';
-import tailwind from '../assets/tech/tailwind.png';
+import html from '../assets/skills/html5-svgrepo-com.svg';
+import css from '../assets/skills/css-3-svgrepo-com.svg';
+import javascript from '../assets/skills/javascript-svgrepo-com.svg';
+import tailwind from '../assets/skills/tailwind-svgrepo-com.svg';
 import bootstrap from '../assets/tech/bootstrap.png';
-import react from '../assets/tech/react.png';
-import redux from '../assets/tech/redux.png';
-import mongo from '../assets/tech/mongo.png';
-import express from '../assets/tech/express.png';
-import node from '../assets/tech/node.png';
-import typescript from '../assets/tech/typescript.png';
-import git from '../assets/tech/git.png';
+import react from '../assets/skills/react-svgrepo-com.svg';
+import redux from '../assets/skills/redux-svgrepo-com.svg';
+import mongo from '../assets/skills/mongodb-svgrepo-com.svg';
+import express from '../assets/skills/express-svgrepo-com.svg';
+import node from '../assets/skills/node-svgrepo-com.svg';
+import typescript from '../assets/skills/typescript-icon-svgrepo-com.svg';
+import git from '../assets/skills/git-svgrepo-com.svg'
 import firebase from '../assets/tech/firebase.png'
 
 const Skills = () => {
@@ -50,15 +50,15 @@ const Skills = () => {
   const skills = [
     {
       title: "HTML",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      icon: html,
     },
     {
       title: "CSS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      icon: css,
     },
     {
       title: "Javascript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      icon: javascript,
     },
     {
       title: "ExpressJS",
@@ -66,11 +66,11 @@ const Skills = () => {
     },
     {
       title: "TailwindCSS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      icon: tailwind,
     },
     {
       title: "React",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      icon: react,
       style: "animate-spin"
     },
     {
@@ -80,19 +80,19 @@ const Skills = () => {
     },
     {
       title: "Typescript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      icon: typescript,
     },
     {
       title: "NodeJS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      icon: node
     },
     {
       title: "Git",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      icon: git,
     },
     {
       title: "Firebase",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      icon: firebase
     },
     {
       title: "MongoDB",
@@ -197,7 +197,7 @@ const Skills = () => {
               key={index}
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
-              <img src={item.icon} className={`hover:scale-125 duration-500 ease-in-out ${item.title == "React" ? item.style : ""} ${item.title == "Redux" ? item.style : ""}`} />
+              <img src={item.icon} className={`hover:scale-125 duration-500 ease-in-out w-full ${item.title == "React" ? item.style : ""} ${item.title == "Redux" ? item.style : ""}`} />
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}
               </p>

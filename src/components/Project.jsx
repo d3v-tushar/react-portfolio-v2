@@ -45,8 +45,8 @@ const Project = () => {
     },
   ];
   return (
-    <section id="projects" className="py-10 mt-10 text-white mx-auto w-10/12">
-      <div className="text-center">
+    <section id="projects" className="py-10 text-white mx-auto w-10/12">
+      <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>

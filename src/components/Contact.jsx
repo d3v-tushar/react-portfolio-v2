@@ -57,13 +57,13 @@ const Contact = () => {
     //     </div>
     //   </div>
     // </section>
-    <section class="">
-    <div class="container mx-auto">
+    <section id="contact" className="py-10 px-3 text-white">
+    <div class="container mt-8 mx-auto">
         <div class="lg:flex lg:items-center lg:-mx-6">
             <div class="lg:w-1/2 lg:mx-6">
             <Lottie options={defaultOptions}
-              height={400}
-              width={400}/>
+              height={500}
+              width={500}/>
             </div>
 
             <div class="mt-8 lg:w-1/2 lg:mx-6 px-3 mb-4">
