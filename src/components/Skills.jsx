@@ -71,12 +71,12 @@ const Skills = () => {
     {
       title: "React",
       icon: react,
-      style: "animate-spin"
+      style: "animate-[spin_3s_linear_infinite]"
     },
     {
       title: "Redux",
       icon: redux,
-      style: "animate-spin",
+      style: "animate-[spin_2s_linear_infinite]",
     },
     {
       title: "Typescript",
@@ -189,7 +189,7 @@ const Skills = () => {
               height={400}
               width={400}/>
           </div>
-        <div className="grid grid-cols-3 lg:grid-cols-4 gap-y-6 w-full my-8">
+        <div data-aos="zoom-out-left" className="grid grid-cols-3 lg:grid-cols-4 my-8">
         {skills.map((item, index) => {
           return (
             <div

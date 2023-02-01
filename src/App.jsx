@@ -3,15 +3,19 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
-import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import MySkills from "./components/MySkills";
 import MyProjects from "./components/MyProjects";
-//import Bot from "./components/Bot";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
+  AOS.init({
+  delay: 600, // values from 0 to 3000, with step 50ms
+  duration: 600, // values from 0 to 3000, with step 50ms
+  });
   return (
     <div className="app overflow-hidden">
       <Navbar />
@@ -21,7 +25,6 @@ const App = () => {
       <MySkills></MySkills>
       <Skills />
       <MyProjects/>
-      {/* <Hireme /> */}
       <Project />
       <Contact />
       <Footer />

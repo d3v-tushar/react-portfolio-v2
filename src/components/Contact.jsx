@@ -21,55 +21,23 @@ const Contact = () => {
     }
   };
   return (
-    // <section id="contact" className="py-10 px-3 text-white">
-    //   <div className="text-center mt-8">
-    //     <h3 className="text-4xl font-semibold">
-    //       Contact <span className="text-cyan-600">Me</span>
-    //     </h3>
-    //     <p className="text-gray-400 mt-3 text-lg">Get in touch</p>
-
-    //     <div
-    //       className="mt-16 flex md:flex-row flex-col
-    //      gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
-    //     >
-    //       <form className="flex flex-col flex-1 gap-5">
-    //         <input type="text" placeholder="Your Name" />
-    //         <input type="Email" placeholder="Your Email Address" />
-    //         <textarea placeholder="Your Message" rows={10}></textarea>
-    //         <button className="btn-primary w-fit">Send Message</button>
-    //       </form>
-    //       <div className="flex flex-col  gap-7 ">
-    //         {contact_info.map((contact, i) => (
-    //           <div
-    //             key={i}
-    //             className="flex flex-row  
-    //               text-left gap-4 flex-wrap items-center"
-    //           >
-    //             <div className="min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
-    //               <ion-icon name={contact.logo}></ion-icon>
-    //             </div>
-    //             <p className="md:text-base text-sm  break-words">
-    //               {contact.text}
-    //             </p>
-    //           </div>
-    //         ))}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
     <section id="contact" className="py-10 px-3 text-white">
-    <div class="container mt-8 mx-auto">
+    <div class="container text-center mt-8 mx-auto">
+    <h3 className="text-4xl font-semibold">
+          Contact <span className="text-cyan-600">Me</span>
+        </h3>
+        <p className="text-gray-400 my-3 text-lg">Lets Get in Touch</p>
         <div class="lg:flex lg:items-center lg:-mx-6">
-            <div class="lg:w-1/2 lg:mx-6">
+            <div class="lg:w-1/2 hidden lg:block lg:mx-6">
             <Lottie options={defaultOptions}
-              height={500}
-              width={500}/>
+              height={600}
+              width={600}/>
             </div>
 
-            <div class="mt-8 lg:w-1/2 lg:mx-6 px-3 mb-4">
+            <div data-aos="zoom-out-left" class="mt-8 lg:w-1/2 lg:mx-6 px-3 mb-4 text-left">
                 <div
                     class="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
-                    <h1 class="text-lg font-medium text-gray-700">What do you want to ask</h1>
+                    {/* <h1 class="text-lg font-medium text-gray-700">What do you want to ask</h1> */}
 
                     <form class="mt-6">
                         <div class="flex-1">

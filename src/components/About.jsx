@@ -1,23 +1,28 @@
 import React from "react";
 import aboutImg from "../assets/images/about.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
+  AOS.init();
   const info = [
-    { text: "Years experience", count: "1" },
-    { text: "Completed Projects", count: "14" },
-    { text: "Companies Work", count: "02" },
+    { text: "Years Experience", count: "01" },
+    { text: "Completed Projects", count: "12" },
+    { text: "Workshop Attend", count: "02" },
   ];
   return (
-    <section id="about" className="py-10 text-white">
+    <section id="about" className="py-10 text-white mx-auto w-10/12">
       <div className="text-center mt-8">
+        <div>
         <h3 className="text-4xl font-semibold">
           About <span className="text-cyan-600">Me</span>
         </h3>
-        <p className="text-gray-400 my-3 text-lg">My introduction</p>
-        <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
-          <div className="p-2">
+        <p className="text-gray-400 my-3 text-lg">My Introduction</p>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="p-2 mx-auto lg:mx-5" data-aos="fade-right">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-              Hi, I'm Mohsin Ahmed. A MERN Stack Developer from Bangladesh. I love to write clean, efficient codes & learn new technologies. I am looking for a challenging role in a reputable organization to utilize my development skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the sector.
+              <span className="text-2xl">Hi,</span> I'm Mohsin Ahmed. A MERN Stack Developer from Bangladesh. I love to write clean, efficient codes & learn new technologies. I am looking for a challenging role in a reputable organization to utilize my development skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the sector.
               </p>
               <div className="flex mt-10 justify-center mx-auto items-center gap-7">
                 {info.map((content) => (
@@ -37,12 +42,12 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
-            <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
+          <div>
+            <div className="grid justify-items-center">
               <img
                 src={aboutImg}
                 alt=""
-                className="w-full object-cover bg-cyan-600 rounded-xl"
+                className="w-full lg:w-10/12"
               />
             </div>
           </div>

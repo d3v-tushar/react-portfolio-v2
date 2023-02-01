@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         Poppins: "Poppins",
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      }
     },
   },
   plugins: [],
