@@ -10,6 +10,7 @@ import MySkills from "./components/MySkills";
 import MyProjects from "./components/MyProjects";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   AOS.init({
@@ -28,6 +29,10 @@ const App = () => {
       <Project />
       <Contact />
       <Footer />
+      <Toaster
+      position="top-center"
+      reverseOrder={false}
+      />
     </div>
   );
 };

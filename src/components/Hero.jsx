@@ -23,7 +23,7 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="min-h-screen grid grid-cols-1 justify-items-center justify-center items-center lg:grid-cols-2 mt-12">
+    <section className="min-h-screen bg-[url('/grid.svg')] grid grid-cols-1 justify-items-center justify-center items-center lg:grid-cols-2 mt-12">
         <div className="grid items-center">
           <div className="text-left md:text-left sm:text-center  w-full">
           <h4 className="text-xl md:leading-normal leading-10 text-white font-bold">
@@ -33,7 +33,7 @@ const Hero = () => {
             </span>
             <span className="text-5xl lg:text-7xl">Mohsin Ahmed</span>
           </h4>
-          <h4 className="text-transparent bg-gradient-to-r from-green-400 via-blue-300 to-purple-600 bg-clip-text text-2xl lg:text-[40px] md:leading-normal lg:leading-10 mt-2 font-bold text-gray-700">
+          <h4 className="text-transparent bg-gradient-to-r from-pink-500 via-blue-400 to-purple-600 bg-clip-text text-[26px] lg:text-[40px] leading-snug md:leading-normal lg:leading-10 mt-2 font-bold text-gray-700">
           <TypeAnimation
     // Same String at the start will only be typed once, initially
     sequence={[
@@ -52,12 +52,12 @@ const Hero = () => {
           </h4>
           
           <div className="text-center lg:text-left">
-          <button type="button" className="hover:scale-125 duration-500 ease-in-out px-5 py-2 rounded-xl font-bold mt-4 text-lg bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500">Resume</button>
+          <button type="button" className="btn-primary hover:scale-125 duration-500 ease-in-out mt-4 bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500">RESUME</button>
           </div>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
+            {social_media?.map((icon,index) => (
               <div
-                key={icon}
+                key={index}
                 className="text-gray-300 hover:text-white cursor-pointer "
               >
                 <a href={icon.url} target="_blank" rel="noopener noreferrer"><ion-icon name={icon.logo}></ion-icon></a>

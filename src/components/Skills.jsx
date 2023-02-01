@@ -1,19 +1,20 @@
 import React from "react";
 import Lottie from 'react-lottie';
 import animationData from './../../public/skill.json';
-import html from '../assets/skills/html5-svgrepo-com.svg';
-import css from '../assets/skills/css-3-svgrepo-com.svg';
-import javascript from '../assets/skills/javascript-svgrepo-com.svg';
-import tailwind from '../assets/skills/tailwind-svgrepo-com.svg';
+import html from '../assets/technologies/html-5-svgrepo-com.svg';
+import css from '../assets/technologies/css-3-svgrepo-com.svg';
+import tailwind from '../assets/tech/tailwind.png';
 import bootstrap from '../assets/tech/bootstrap.png';
-import react from '../assets/skills/react-svgrepo-com.svg';
-import redux from '../assets/skills/redux-svgrepo-com.svg';
-import mongo from '../assets/skills/mongodb-svgrepo-com.svg';
-import express from '../assets/skills/express-svgrepo-com.svg';
-import node from '../assets/skills/node-svgrepo-com.svg';
-import typescript from '../assets/skills/typescript-icon-svgrepo-com.svg';
-import git from '../assets/skills/git-svgrepo-com.svg'
-import firebase from '../assets/tech/firebase.png'
+import javascript from '../assets/technologies/javascript-svgrepo-com.svg';
+import react from '../assets/tech/react.png';
+import redux from '../assets/tech/redux.png';
+import firebase from '../assets/technologies/firebase-svgrepo-com.svg';
+import mongo from '../assets/technologies/mongodb-svgrepo-com.svg';
+import node from '../assets/tech/node.png';
+import express from '../assets/tech/express.png';
+import git from '../assets/tech/git.png';
+import typescript from '../assets/tech/typescript.png'
+
 
 const Skills = () => {
   // const skills = [
@@ -55,18 +56,19 @@ const Skills = () => {
     {
       title: "CSS",
       icon: css,
-    },
-    {
-      title: "Javascript",
-      icon: javascript,
-    },
-    {
-      title: "ExpressJS",
-      icon: express,
+      
     },
     {
       title: "TailwindCSS",
       icon: tailwind,
+    },
+    {
+      title: "Bootstrap",
+      icon: bootstrap,
+    },
+    {
+      title: "Javascript",
+      icon: javascript,
     },
     {
       title: "React",
@@ -76,15 +78,18 @@ const Skills = () => {
     {
       title: "Redux",
       icon: redux,
-      style: "animate-[spin_2s_linear_infinite]",
-    },
-    {
-      title: "Typescript",
-      icon: typescript,
     },
     {
       title: "NodeJS",
       icon: node
+    },
+    {
+      title: "ExpressJS",
+      icon: express,
+    },
+    {
+      title: "MongoDB",
+      icon: mongo,
     },
     {
       title: "Git",
@@ -94,70 +99,10 @@ const Skills = () => {
       title: "Firebase",
       icon: firebase
     },
-    {
-      title: "MongoDB",
-      icon: mongo,
-    },
+    
   ];
-
-  // const skills = [
-  //   {
-  //     title: "HTML",
-  //     icon: html
-  //   },
-  //   {
-  //     title: "CSS",
-  //     icon: css
-  //   },
-  //   {
-  //     title: "Javascript",
-  //     icon: javascript,
-  //   },
-  //   {
-  //     title: "TailwindCSS",
-  //     icon: tailwind,
-  //   },
-  //   {
-  //     title: "React",
-  //     icon: react,
-  //     style: { filter: "animate-spin" },
-  //   },
-  //   {
-  //     title: "ReduxJS",
-  //     icon: redux,
-  //     style: { filter: "invert(1)" },
-  //   },
-  //   {
-  //     title: "Typescript",
-  //     icon: typescript,
-  //   },
-  //   {
-  //     title: "NodeJS",
-  //     icon: node,
-  //   },
-  //   {
-  //     title: "Git",
-  //     icon: git,
-  //   },
-  //   {
-  //     title: "ExpressJS",
-  //     icon: express
-  //   },
-  //   {
-  //     title: "Bootstrap",
-  //     icon: bootstrap
-  //   },
-  //   {
-  //     title: "MongoDB",
-  //     icon: mongo
-  //   },
-  //   {
-  //     title: "Firebase",
-  //     icon: firebase
-  //   },
-  // ];
   return (
-    <section id="skills" className="py-10 relative w-11/12">
+    <section id="skills" className="py-10 relative w-10/12 mx-auto">
       <div className="mt-8 text-gray-100 text-center">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
@@ -189,7 +134,7 @@ const Skills = () => {
               height={400}
               width={400}/>
           </div>
-        <div data-aos="zoom-out-left" className="grid grid-cols-3 lg:grid-cols-4 my-8">
+        <div data-aos="zoom-out-left" className="grid grid-cols-3 lg:grid-cols-4 gap-y-3 my-8">
         {skills.map((item, index) => {
           return (
             <div
@@ -197,7 +142,7 @@ const Skills = () => {
               key={index}
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
-              <img src={item.icon} className={`hover:scale-125 duration-500 ease-in-out w-full ${item.title == "React" ? item.style : ""} ${item.title == "Redux" ? item.style : ""}`} />
+              <img src={item.icon} className={`hover:scale-125 duration-500 ease-in-out w-full ${item.title == "React" ? item.style : ""}`} />
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}
               </p>

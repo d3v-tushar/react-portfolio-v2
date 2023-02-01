@@ -105,7 +105,7 @@ const Project = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-10">
       {
         projects.map((project, index) =>
-        <div
+        <div key={index}
       className="max-w-sm mx-auto flex flex-col projects-center md:projects-start md:justify-center"
     >
       <a
