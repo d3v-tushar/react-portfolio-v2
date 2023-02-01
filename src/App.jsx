@@ -6,7 +6,6 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import MySkills from "./components/MySkills";
 import MyProjects from "./components/MyProjects";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,11 +19,9 @@ const App = () => {
   return (
     <div className="app overflow-hidden">
       <Navbar />
-      {/* <Bot /> */}
       <Hero />
-      <About />
-      <MySkills></MySkills>
       <Skills />
+      <About />
       <MyProjects/>
       <Project />
       <Contact />

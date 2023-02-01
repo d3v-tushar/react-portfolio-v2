@@ -52,7 +52,8 @@ const Hero = () => {
           </h4>
           
           <div className="text-center lg:text-left">
-          <button type="button" className="btn-primary hover:scale-125 duration-500 ease-in-out mt-4 bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500">RESUME</button>
+          <a href='https://drive.google.com/uc?export=download&id=1SePO_a5VRZwPm4rfrgGrsKVcjTM-eZnu'>
+          <button type="button" className="btn-primary hover:scale-125 duration-500 ease-in-out mt-4 bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500">RESUME</button></a>
           </div>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((icon,index) => (

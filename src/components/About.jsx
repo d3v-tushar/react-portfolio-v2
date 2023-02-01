@@ -37,7 +37,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a className="grid justify-center" href="./src/assets/Code_a_program.pdf" download>
+              <a className="grid justify-center" href="https://drive.google.com/uc?export=download&id=1lDHs8gA6vGBNnpIvGag5vQaeSde4AS8Q" download>
                 <button className="btn-primary hover:scale-125 duration-500 ease-in-out bg-gradient-to-r from-pink-500">Download CV</button>
               </a>
             </div>
