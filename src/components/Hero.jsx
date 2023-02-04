@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import hero from "../assets/images/hero.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaFilePdf } from "react-icons/fa";
 const Hero = () => {
   AOS.init();
   const social_media = [
@@ -23,8 +24,8 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="min-h-screen bg-[url('/grid.svg')] grid grid-cols-1 justify-items-center justify-center items-center lg:grid-cols-2 mt-12">
-        <div className="grid items-center">
+    <section data-aos="fade-up" className="min-h-screen bg-[url('/grid.svg')] grid grid-cols-1 justify-items-center justify-center items-center lg:grid-cols-2 mt-12">
+        <div data-aos="fade-right" data-aos-duration="5000" className="grid items-center">
           <div className="text-left md:text-left sm:text-center  w-full">
           <h4 className="text-xl md:leading-normal leading-10 text-white font-bold">
             <span className="text-cyan-600 lg:text-4xl text-3xl">
@@ -53,7 +54,7 @@ const Hero = () => {
           
           <div className="text-center lg:text-left">
           <a href='https://drive.google.com/uc?export=download&id=1SePO_a5VRZwPm4rfrgGrsKVcjTM-eZnu'>
-          <button type="button" className="btn-primary hover:scale-125 duration-500 ease-in-out mt-4 bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500">RESUME</button></a>
+          <button type="button" className="btn-primary hover:scale-125 duration-500 ease-in-out mt-4 bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:from-green-400 to-blue-500">RESUME <FaFilePdf/></button></a>
           </div>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((icon,index) => (
