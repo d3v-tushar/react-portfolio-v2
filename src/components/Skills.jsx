@@ -110,7 +110,7 @@ const Skills = () => {
               width={400}/>
           </div>
           </div>
-        <div data-aos="zoom-out-left" className="grid grid-cols-3 lg:grid-cols-4 gap-y-5 my-8">
+        <div data-aos="zoom-out-left" data-aos-duration="4000" className="grid grid-cols-3 lg:grid-cols-4 gap-y-5 my-8">
         {skills.map((item, index) => {
           return (
             <div

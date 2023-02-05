@@ -24,8 +24,8 @@ const Hero = () => {
     },
   ];
   return (
-    <section data-aos="fade-up" className="min-h-screen bg-[url('/grid.svg')] grid grid-cols-1 justify-items-center justify-center items-center lg:grid-cols-2 mt-12">
-        <div data-aos="fade-right" data-aos-duration="5000" className="grid items-center">
+    <section data-aos="fade-up" data-aos-duration="500" id="home" className="min-h-screen bg-[url('/grid.svg')] grid grid-cols-1 justify-items-center justify-center items-center lg:grid-cols-2 mt-12">
+        <div data-aos="fade-right" className="grid items-center">
           <div className="text-left md:text-left sm:text-center  w-full">
           <h4 className="text-xl md:leading-normal leading-10 text-white font-bold">
             <span className="text-cyan-600 lg:text-4xl text-3xl">
